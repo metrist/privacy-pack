@@ -192,6 +192,11 @@ li {
 
 }
 
+.intro {
+  font-weight: 400;
+  font-size:18px;
+}
+
 #passwords, #windows, #more {
   background-color: #fafcfe;
   border-top: 1px solid #edeff1;
