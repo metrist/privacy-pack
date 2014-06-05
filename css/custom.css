@@ -365,6 +365,8 @@ li {
 }
 
 #sharing-links a {
+  clear: both;
+  display: block;
   text-decoration: none;
 }
 #sharing-links a .btn-share {
