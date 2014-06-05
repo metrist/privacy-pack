@@ -14,9 +14,26 @@
 }
 
 .btn-download {
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 3px;
+  font-weight: 600;
   margin-bottom: 6px;
+  padding: 7px 30px;
+  margin-top: 10px;
+}
+.learnmore {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.learnmore a {
+  text-decoration: underline;
+  color: #C8E0F6;
+}
+.learnmore a span {
+  color:#428BCA;
+}
+.learnmore a span:hover, .learnmore a:hover {
+  color: #3e91f4;
 }
 
 a {
@@ -48,7 +65,11 @@ form {
 }
 
 .section-links {
-  font-size: 25px;
+  font-size: 18px;
+}
+
+.section-links a span {
+  font-size: 65%;
 }
 
 img {
@@ -60,6 +81,7 @@ body {
   font-size: 20px;
   background: white;
   color: #385e7f;
+    font-weight: 100;
 }
 
 h1 {
@@ -130,7 +152,7 @@ ol ol li:last-child {margin-bottom:0;}
 
 #sharing-links {
   bottom: 5%;
-  left: 0px;
+  left: -4px;
   position: fixed;
   z-index: 999;
 }
@@ -183,9 +205,25 @@ li {
   margin-bottom: 10px;
 }
 
-.triplets-container {
+.triplets-container, .triplets-header {
   max-width: 69%;
   margin:0 auto;
+}
+.triplets-container {
+    margin-bottom:30px;
+}
+.triplets-header h2 {
+  margin-bottom: 10px ;
+}
+
+.subtext {
+  font-size: 20px;
+  margin-bottom:40px;
+  font-weight: 100;
+}
+
+#phone, #password, #mac {
+  padding-bottom:40px;
 }
 
 
@@ -213,15 +251,12 @@ li {
     min-height: 130px;
   }
   .section-links {
-    font-size: 11px;
+    font-size: 14px;
   }
   .btn {
     font-size: 10px;
   }
-  .btn-download {
-    font-size: 6px;
-  }
-  .triplets-container {
+  .triplets-container, .triplets-header {
     max-width: 89%;
   }
   .phone-description {
@@ -260,7 +295,7 @@ li {
   }
 
   .section-links {
-    font-size: 11px;
+    font-size: 18px;
   }
   .btn {
     font-size: 10px;
@@ -274,12 +309,12 @@ li {
   .navigation {
     line-height: 1.9;
   }
-  .triplets-container {
+  .triplets-container, .triplets-header {
     max-width: 100%;
     margin-right: -15px;
     margin-left: -15px;
   }
-  .triplets-container .col-sm-4 {
+  .triplets-container .col-sm-4, .triplets-container .col-sm-6 {
     margin-bottom:40px;
   }
 }
@@ -313,7 +348,7 @@ li {
   .splash {
     font-size: 18px;
   }
-  .triplets-container {
+  .triplets-container, .triplets-header {
     max-width: 59%;
   }
 }
@@ -321,6 +356,11 @@ li {
 @media all and (min-width: 1200px) {
   .phone-description {
   min-height: 86px;
+  }
+  .subtext{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -335,5 +375,10 @@ li {
 @media all and (max-width: 1199px) {
   .navigation > a {
     padding: 8px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  #passwords h2 {
+    font-size: 61px;
   }
 }
