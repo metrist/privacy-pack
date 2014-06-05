@@ -266,6 +266,12 @@ li {
 }
 
 
+@media all and (max-width: 1500px) {
+  .splash {
+  background-position: center -7%;
+}
+  }
+  
 @media all and (min-width: 768px) and (max-width: 991px)  {
   #id_email {
     width: 70%;
